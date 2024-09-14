@@ -5,7 +5,7 @@ email="你的cloudflare邮箱"
 api_key="你的cloudflare GLOBAL API KEY"
 domain="lovelyy.us.kg"  # 主域名信息
 rule_description="Openwrt Nginx cdn4 > port"  # 需要更新描述的规则
-new_port=${port}:  # 你想要设置的新端口默认是lucky传递的参数
+new_port=${port}  # 你想要设置的新端口默认是lucky传递的参数
 
 # 锁文件路径
 lockfile="/tmp/cloudflare_update.lock"
