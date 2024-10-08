@@ -1,3 +1,5 @@
+lucky同步端口到Cloudflare！！！需要安装jq拓展和curl！！！rule_description需要改成的你的规则名
+
 本人的路由器是于咸鱼 旷佬 89(包邮) 购入1+8G 一下是本人的交流心得
 
 1G是可以跑docker的 但是没有虚拟化 只能靠CPU纯算
