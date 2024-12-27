@@ -5,7 +5,7 @@ email="你的cloudflare邮箱"
 api_key="你的cloudflare GLOBAL API KEY"
 domain="lovelyy.eu.org"  # 主域名信息
 rule_description="openwrt"  # 需要更新的规则描述
-ipAddr="192.168.1.1"  # 动态设置的 IP 地址
+ipAddr=${ipAddr}  # 动态设置的 IP 地址
 
 # 缓存文件路径
 cache_dir="/tmp/cloudflare_cache"
