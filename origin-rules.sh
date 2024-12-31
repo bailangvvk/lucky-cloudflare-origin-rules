@@ -7,10 +7,10 @@ domain="xxxx.us.kg"  # 主域名信息
 rule_description="Openwrt Nginx cdn4 > port"  # 需要更新描述的规则
 new_port=${port}  # 你想要设置的新端口，默认是传递的参数
 
-# 缓存文件路径
-cache_dir="/tmp/cloudflare_orgin_cache"
-zone_id_cache="${cache_dir}/zone_id_${domain}.cache"
-ruleset_id_cache="${cache_dir}/ruleset_id_${domain}.cache"
+# 缓存文件路径，拼接域名以区分不同域名
+cache_dir="/tmp/cloudflare_origin_${domain}"
+zone_id_cache="${cache_dir}/zone_id.cache"
+ruleset_id_cache="${cache_dir}/ruleset_id.cache"
 
 # 创建缓存目录
 mkdir -p "$cache_dir"
