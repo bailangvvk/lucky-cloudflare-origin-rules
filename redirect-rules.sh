@@ -1,7 +1,7 @@
 # 设置必要的变量
-email="2123146130@qq.com"
-api_key="8f46b08f4d030358a3183fa98728be5258cea"
-domain="lovelyy.us.kg"  # 主域名信息
+email="你的邮箱"
+api_key="你的全局API KEY"
+domain="xxx.us.kg"  # 主域名信息
 rule_description="openwrt"  # 需要更新描述的规则
 ipAddr=${ipAddr}  # 动态设置的 IP 地址
 
