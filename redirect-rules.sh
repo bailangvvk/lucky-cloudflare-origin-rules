@@ -13,7 +13,7 @@ ipAddr=${ipAddr}
 redirect_domain="op."$domain
 
 # 缓存文件路径
-cache_dir="/tmp/cloudflare_cache"
+cache_dir="/tmp/cloudflare_redirect_${domain}"
 zone_id_cache="${cache_dir}/zone_id_${domain}.cache"
 ruleset_id_cache="${cache_dir}/ruleset_id_${domain}.cache"
 rule_id_cache="${cache_dir}/rule_id_${domain}_${rule_description}.cache"
