@@ -1,9 +1,16 @@
 # 设置必要的变量
+# 你的cf账号
 email="你的邮箱"
+# 你的全局API_KEY
 api_key="你的全局API KEY"
-domain="xxx.us.kg"  # 主域名信息
-rule_description="openwrt"  # 需要更新描述的规则
-ipAddr=${ipAddr}  # 动态设置的 IP 地址
+# 主域名信息
+domain="xxx.us.kg"
+# 需要更新描述的规则名称 （必需）
+rule_description="openwrt"
+# 动态设置的 IP 地址
+ipAddr=${ipAddr}
+# 重定向域名信息
+redirect_domain="op."$domain
 
 # 缓存文件路径
 cache_dir="/tmp/cloudflare_cache"
@@ -62,7 +69,7 @@ response=$(curl -s -X PATCH "https://api.cloudflare.com/client/v4/zones/${zone_i
     -H "Content-Type: application/json" \
     --data '{
         "action": "redirect",
-        "expression": "(http.host eq \"op.lovelyy.us.kg\")",
+        "expression": "(http.host eq \"'${redirect_domain}'\")",
         "description": "'"${rule_description}"'",
         "action_parameters": {
             "from_value": {
