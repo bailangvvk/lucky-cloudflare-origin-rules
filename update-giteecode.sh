@@ -39,7 +39,7 @@ RESPONSE=$(curl -s -X PUT -H "Authorization: token $ACCESS_TOKEN" \
 -H "Content-Type: application/json" \
 -d "$(cat <<EOF
 {
-  "message": "热重载触发",
+  "message": "Lucky shell热更新",
   "content": "$ENCODED_CONTENT",
   "sha": "$SHA"
 }
